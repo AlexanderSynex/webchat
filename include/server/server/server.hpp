@@ -12,9 +12,9 @@ class Server
 public:
   constexpr Server () = default;
 
-  virtual ~Server();
+  virtual ~Server ();
 
-  Server(std::string_view host, std::size_t port);
+  Server (std::string_view host, std::size_t port);
 
 private:
   std::unordered_multimap<session_id, client_id> sessions = {};
